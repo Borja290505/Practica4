@@ -17,7 +17,7 @@ public class Average {
 
         // Generar tantos números aleatorios entre 1 y 50 como se haya obtenido en el punto anterior
         for (int i = 0; i < count; i++) {
-            int numeroAleatorio = random.nextInt(50) + 1;  // nextInt(100) genera entre 0 y 49, sumamos 1 para que sea entre 1 y 50
+            int numeroAleatorio = random.nextInt(100) + 1;  // nextInt(100) genera entre 0 y 99, sumamos 1 para que sea entre 1 y 100
             total += numeroAleatorio;
             System.out.println("Número aleatorio " + (i + 1) + ": " + numeroAleatorio);
         }
@@ -25,5 +25,8 @@ public class Average {
         // Mostrar la suma total
         System.out.println("Suma total de los números generados: " + total);
 
+        // Mostrar la media
+        double media = (double) total / (double) count;
+        System.out.println("Media: " + media);
     }
 }
