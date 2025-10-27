@@ -1,5 +1,6 @@
 package ed.ud4;
 
+import java.time.LocalDateTime;
 import java.util.Random;
 
 public class Average {
@@ -45,5 +46,6 @@ public class Average {
         }
 
         System.out.println("End Of Program");
+        System.out.println("Execution ended at " + LocalDateTime.now());
     }
 }
