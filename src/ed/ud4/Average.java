@@ -43,6 +43,6 @@ public class Average {
             System.out.println("No se han generado números, no se puede calcular la media.");
         }
 
-        System.out.println("Fin de proceso");
+        System.out.println("End of program");
     }
 }
