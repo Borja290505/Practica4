@@ -13,6 +13,7 @@ public class Average {
         int total = 0;
         double producto = 1.0;
         int minimo = Integer.MAX_VALUE;
+        int maximo = Integer.MIN_VALUE;
 
         for (int i = 0; i < count; i++) {
             int numeroAleatorio = random.nextInt(100) + 1;  // entre 1 y 100
@@ -21,6 +22,10 @@ public class Average {
 
             if(numeroAleatorio < minimo){
                 minimo = numeroAleatorio;
+            }
+
+            if(numeroAleatorio > maximo){
+                maximo = numeroAleatorio;
             }
             System.out.println("Número aleatorio " + (i + 1) + ": " + numeroAleatorio);
         }
@@ -33,6 +38,7 @@ public class Average {
             System.out.println("Media aritmética: " + media);
             System.out.println("Media geométrica: " + mediaGeometrica);
             System.out.println("Valor minimo: " + minimo);
+            System.out.println("Valor maximo: " + maximo);
         } else {
             System.out.println("No se han generado números, no se puede calcular la media.");
         }
